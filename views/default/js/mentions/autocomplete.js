@@ -51,12 +51,12 @@ define(function(require) {
 		});
 
 		if (!userOptions) {
-			$('#mentions-popup > .elgg-body').html('<div class="elgg-ajax-loader"></div>');
+			$('#mentions-popup > .panel-body').html('<div class="elgg-ajax-loader"></div>');
 			$('#mentions-popup').addClass('hidden');
 			return;
 		}
 
-		$('#mentions-popup > .elgg-body').html('<ul class="mentions-autocomplete">' + userOptions + "</ul>");
+		$('#mentions-popup > .panel-body').html('<ul class="mentions-autocomplete">' + userOptions + "</ul>");
 		$('#mentions-popup').removeClass('hidden');
 
 		$('.mentions-autocomplete > li').bind('click', function(e) {
